@@ -4,7 +4,9 @@
   "description": "Standard boiler plate template to run ejs files",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node index.js",
+    "build:tailwind:minify": "npx tailwindcss -i ./style/tailwind.css -o ./style/styles.css --minify",
+    "build:tailwind": "npx tailwindcss -i ./style/tailwind.css -o ./style/styles.css --watch"
   },
   "repository": {
     "type": "git",
